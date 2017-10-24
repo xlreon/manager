@@ -36,7 +36,8 @@ export const loginUser = ({email, pass}) => {
 
 const loginUserSucces = (dispatch,user) => {
     dispatch({type: LOGIN_USER_SUCCESS,payload: user});
-    console.log(Actions.main);
+    //console.log(Actions.main);
+    Actions.main();
 }
 
 const loginUserFailed = (dispatch) => {
